@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add 7 Function</h1>
+    <script>
+        function add7 (num){
+            return num + 7;
+        }
+        document.writeln(add7(4));
+    </script>
+    <h1>Multiply Function</h1>
+    <script>
+        function multiply(num1, num2) {
+            return num1 * num2;
+        }
+        document.writeln(multiply(3,6));
+    </script>
+    <h1>Capitalize</h1>
+    <script>
+        function capitalize(word){
+            //makes all letters lowercase 
+            word = word.toLowerCase();
+            //Convert first letter to upper case and combines the rest of the word together.
+            const capitalized = word.charAt(0).toUpperCase() + word.slice(1);
+            return capitalized;
+        }
+        document.writeln(capitalize('dAnIeL'));
+    </script>
+    <h1>Last Letter</h1>
+    <script>
+        function lastLetter(word) {
+            //returns last letter of word
+            const letter = word.slice(-1);
+            return letter;
+        }
+        document.writeln(lastLetter('dAnIeL'));
+    </script>
+    <script src="./resources/scripts/index.js"></script>
+</body>
+</html>
