@@ -1,0 +1,124 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #14110f;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
+.header {
+padding: 30px 0;
+color: #e3d7ff;
+}
+
+.title {
+text-align: center;
+font-size: 80px;
+}
+
+h3 {
+    color: #e3d7ff;
+}
+
+#grid {
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    width: 600px;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#settings {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+button {
+    width: 200px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    border-radius: 25px;
+    text-shadow: 0 1px 0 white;
+    color: white;
+    background-color: #afa2ff;
+}
+
+
+input[type="color"] {
+
+    width: 200px;
+    height: 50px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 25px;
+    background-color: #191716;
+}
+
+input[type="range"] {
+    height: auto;
+    width: 200px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;   
+    color: #d3b99f;
+}
+
+.gridDimension {
+    color: #e3d7ff;
+    font-size: 20px;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    background-color: #7a89c2;
+    border-radius: 5px;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    border: 1px solid #7a89c2;
+    border-radius: 25px;
+    background: white;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 25px;
+    margin-top: -8px;
+    background: #7a89c2;
+}
+
+#colorWell::-webkit-color-swatch {
+    border: none;
+    border-radius: 25px;
+    padding: 0;
+}
+
+#colorWell::-webkit-color-swatch-wrapper {
+    border: none;
+    border-radius: 25px;
+    padding: 0;
+}
