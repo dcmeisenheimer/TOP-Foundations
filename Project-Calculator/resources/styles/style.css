@@ -1,0 +1,75 @@
+/* I need 6 rows and 4 columns */
+
+.container {
+    padding-top: 100px;
+    justify-content: center;
+    display: grid;
+    grid-template-areas: 'outputNumber' 'outputNumber' 'outputNumber' 'outputNumber',
+                        'clearDelete' 'clearDelete' 'clearDelete' 'clearDelete',
+                        'highNumbers' 'highNumbers' 'highNumbers' 'highNumbers',    
+                        'medNumbers' 'medNumbers' 'medNumbers' 'medNumbers', 
+                        'lowNumbers' 'lowNumbers' 'lowNumbers' 'lowNumbers',
+                        'lowestNumbers' 'lowestNumbers' 'lowestNumbers' 'lowestNumbers'; 
+    grid-gap: 2px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    border-color: black;
+}
+.row {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 3px;
+
+}
+.col-md-12 {
+    border-radius: 10px;
+    border-style: solid;
+    grid-area: outputNumber;
+    width: 100%;
+    border-width: thin;
+}
+
+.col-md-6 {
+    border-radius: 10px;
+    border-style: solid;
+    grid-area: clearDelete;
+    border-width: thin;
+}
+
+.high {
+    border-radius: 10px;
+    border-style: solid;
+    grid-area: highNumbers;
+    border-width: thin;
+}
+
+.med {
+    border-radius: 10px;
+    border-style: solid;
+    grid-area: medNumbers;
+    border-width: thin;
+}
+
+.low {
+    border-radius: 10px;
+    border-style: solid;
+    grid-area: lowNumbers;
+    border-width: thin;
+}
+
+.lowest {
+    border-radius: 10px;
+    border-style: solid;
+    grid-area: lowestNumbers;
+    border-width: thin;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 90;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
